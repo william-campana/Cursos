@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+		<meta charset="utf-8">
+		<meta name="author" content="William Campana">
+		<meta name="keywords" content="Estudo, HTML, CSS, JavaScript, WEB">
+		<meta name="description" content="Aprendendo HTML básico: imagens, vídeos, lista e tabelas">
+        <title>Estrutura Básica</title>
+
+		<style>
+		</style>
+    </head>
+
+    <body>
+		<h1>Trabalhando com Imagens, Vídeos, Lista e Tabelas</h1>
+
+        <!---------------------------------------------------------------------------------------------------->        		
+		
+		<!-- quando é somente imagem decorativa, não é utilizado para buscas, etc -->
+		<h2>Imagem</h2>
+		<img src="img/imagemEnfeite.jpg" alt="Prateleira de livros"> <!-- alt: pode ser que o google catalogue essa img com o site -->
+        
+		<!-- usa figure para os robos (buscadores) de busca ter mais informação -->
+		<figure>
+			<a href="https://www.youtube.com/user/softbluecursos">
+				<img src="img/sbv2_brasilMap.png" alt="Mapa softblue">
+		    </a>
+			<figcaption>Softblue: de Curitiba para todo Brasil</figcaption>
+		</figure>
+
+        <!---------------------------------------------------------------------------------------------------->        
+
+		<h2>Vídeo</h2>
+		<video width="400" height="200" controls>
+			<source src="video/seuVideo.mp4" type="video/mp4">
+			Seu navegador não suporta esse vídeo   <!-- caso o navegador não suportar o video mp4, a mensagem irá aparecer. Caso contrário não aparece a mensagem -->
+		</video>
+
+		<!-- pegando o vídeo do youtube -->
+		<iframe width="400" height="200" src="https://www.youtube.com/embed/HoU6cQz1NPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!---------------------------------------------------------------------------------------------------->        
+
+		<h2>Lista</h2>
+        
+		<!-- lista não numerada -->
+		<ul>
+			<li>HTML</li>
+			<ul>
+				<li>Marcações</li>
+				<li>Criação de links</li>
+			</ul>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>JQuery</li>
+		</ul>
+
+		<!-- lista ordenadas -->
+		<ol>
+			<li>McLaren</li>
+			<li>Ferrari</li>
+			<li>Honda</li>
+		</ol>
+
+        <!---------------------------------------------------------------------------------------------------->        
+
+		<h2>Tabela</h2>
+
+		<table border="1">
+			<caption>Relatório dos pilotos da Fórmula 1</caption>
+			<tr> <!-- linha-->
+				<th>Nome do Piloto</th>  <!-- define cabeçalho da tabela com destaque-->
+				<th>Pontuação</th>
+				<th>Ativo</th>
+			</tr>
+			<tr> <!-- nova linha-->
+                <td>Piloto 1</td> <!-- conteudo de cada coluna-->
+				<td>9.8</td>
+				<td rowspan="2">SIM</td>
+			</tr>
+			<tr>
+                <td>Piloto 2</td>
+				<td>9.2</td>
+			</tr>
+			<tr>
+                <td>Piloto 3</td>
+				<td>4.5</td>
+				<td>NÃO</td>
+			</tr>
+		</table>
+
+    </body>
+</html>

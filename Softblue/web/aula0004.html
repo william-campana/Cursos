@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+		<meta charset="utf-8">
+		<meta name="author" content="William Campana">
+		<meta name="keywords" content="Estudo, HTML, CSS, JavaScript, WEB">
+		<meta name="description" content="Aprendendo HTML básico: Semântica e Textos Especiais">
+        <title>Estrutura Básica - Semântica e Textos Especiais</title>
+
+		<style>
+		</style>
+    </head>
+
+    <body>
+		<h1>Semântica e Textos Especiais</h1>
+
+        <p>
+            <!-- strong deixa em negrito a palavra. é utilizado por buscadores (robos) para busca da pagina.-->
+            <!-- quando for termo principal para buscadores, caso não for tão importante (deixar só negrito), utilizar <b></b>-->
+            Esta página apresenta textos e códigos do <strong>algoritmo de busca binária.</strong>
+        </p>
+
+        <p>
+            <!-- deixa em itálico e é utilizado por buscadores (mesmo caso do strong)-->
+            O nome da busca vem do inglês <em>binary search algorithm</em>
+        </p>
+        
+        <!--<pre> apresenta o texto como quero e não traz relevância-->
+        <!-- <code> tem relevância para buscadores -->
+        <code>
+           <pre>
+           public static void calculadora(int x) {
+               for (int nX = 1; x <= 10; x++) {
+                   System.out.println(nX + " X " + x + " = " nX*x);
+                }
+           }
+           </pre>
+        </code>
+
+        <p>
+            O algoritmo inicia criando as variáveis <var>inicio</var> e <var>fim</var>
+            <br>
+            o programa iniciará quando o usuário selecionar a tecla <kbd>ENTER</kbd>.
+            <br>
+            O resultado desse exeplo será <samp>5 BUSCAS</samp>.
+        </p>
+
+        <p>
+            A fórmula da agua é H<sub>2</sub>O
+            Cálculo da hipotenusa é a<sup>2</sup> = b<sup>2</sup> + c<sup>2</sup>
+
+        </p>
+
+
+    </body>
+</html>

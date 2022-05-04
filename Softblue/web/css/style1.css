@@ -1,0 +1,36 @@
+.paragrafoGrandeVermelho {
+    font-size: 40px;
+    color: #ff0000;
+    font-style: normal;
+}
+
+.fundoVermelho {
+    background-color: #ff0000;
+}
+
+.corBranca {
+    color: #ffffff;
+}
+
+p {
+    font-style: italic;
+}
+
+#rodape {
+    font-size: 14px;
+    background-color: #ffdddd;
+}
+
+p#rodape {
+    font-size: 14px;
+    background-color: #ff0000;
+}
+
+p#dicaDoInstrutor {
+    background-color: #0000ff;
+}
+
+th.paragrafoGrandeVermelho  {
+    font-size: 80px;
+  
+}

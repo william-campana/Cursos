@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+		<meta charset="utf-8">
+		<meta name="author" content="William Campana">
+		<meta name="keywords" content="Estudo, HTML, CSS, JavaScript, WEB">
+		<meta name="description" content="Aprendendo HTML básico: formulários e seus componetes">
+        <title>Estrutura Básica - Formulários</title>
+
+		<style>
+		</style>
+    </head>
+
+    <body>
+		<h1>Trabalhando com Formulários e seus componentes</h1>
+
+        <form method="get" action="?">   <!-- com ? envia para própria página, o get é para aparecer na barra de endereço-->
+            <label for="">Nome:</label>
+            <input type="text" name="campoNome" placeholder="Insira seu nome">
+            <br/>
+
+            <label for="">Idade:</label>
+            <input type="number" name="campoIdade" min="0" max="115">
+            <br/>
+
+            <label for="">Sexo:</label>
+            <input type="radio" name="campoSexo" value="M">Masculino
+            <input type="radio" name="campoSexo" value="F">Feminino
+            <br/>
+
+            <label for="">Interesses</label>
+            <br/>
+            <input type="checkbox" name="campoAutomovel">Automóveis
+            <br/>
+            <input type="checkbox" name="campoBarco">Barcos
+            <br/>
+            <input type="checkbox" name="campoAviao">Aviões
+            <br/>
+
+            <label for="">Estado Civil</label>
+            <select name="campoEstadoCivil" id="">
+                <option value="">Escolha uma opção</option>
+                <option value="S">Solteiro</option>
+                <option value="C">Casado</option>
+                <option value="D">Divorciado</option>
+                <option value="V">Viuvo</option>
+            </select>
+            <br/>
+
+
+            <input type="submit" value="Enviar Dados">
+            <input type="reset" value="Limpar Dados">
+        </form>
+    </body>
+</html>

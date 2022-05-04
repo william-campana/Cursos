@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+		<meta charset="utf-8">
+		<meta name="author" content="William Campana">
+		<meta name="keywords" content="Estudo, HTML, CSS, JavaScript, WEB">
+		<meta name="description" content="Aprendendo HTML básico: Estrutura semântica da página ">
+        <title>Estrutura Básica - Semântica da página </title>
+
+		<style>
+            .flutuarEsquerda {
+                float: left;
+            }
+
+            .meuDivLateral {
+                height: 100px;
+                float: right;
+                padding-right: 20px;
+            }
+
+            .meuDivTopo {
+                height: 82px;
+                text-align: center;
+            }
+		</style>
+    </head>
+
+    <body>
+        <!-- Topo da página -->
+        <header>
+            <div class="meuDivTopo">
+                <figure>
+                    <img class="flutuarEsquerda" src="img/LogotipoSoftblue.png" alt="Logotipo da Softblue">
+                </figure>
+                
+                <!-- Menu principal do site -->
+                <nav>
+                    <a href="#">EMPRESA</a>
+                    <a href="#">CURSOS</a>
+                    <a href="#">CONTATO</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Menu secundário -->
+        <div class="meuDivLateral">
+            <aside>
+                <a href="#">Como funciona?</a>
+                <br/>
+                <a href="#">Certificados</a>
+                <br/>            
+                <a href="#">Instrutores</a>
+            </aside>
+        </div>
+
+        <section>
+            <article>
+                <header>
+                    <h2>Curso de Lógica de Programação</h2>
+                </header>
+
+                <p>Quer aprender com qualidade, venha aprender a programar na Softblue, em nosso <strong>Curso de Lógica de Programação</strong></p>
+                <figure>
+                    <img src="img/CursoLogica.png" alt="Curso de Lógica de Programação">
+                    <figcaption>Curso de Lógica de Programação</figcaption>
+                </figure>
+            </article>
+        </section>
+
+
+        <!-- rodapé da página -->
+        <footer>
+            &copySoftblue - Todos os direitos reservados.
+        </footer>
+    
+    </body>
+</html>
